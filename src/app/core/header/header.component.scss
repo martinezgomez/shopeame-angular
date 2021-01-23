@@ -1,0 +1,74 @@
+@import "../../../styles/imports/settings.imports";
+
+.c-logo {
+  font-family: redHat;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background: #ffffff;
+  justify-content: center;
+  &__blockHeader {
+    margin-top: 0.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 88px;
+    &__logo {
+      padding-top: 3px;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(90deg, #2979ff 0%, #4c589e 100%);
+      border-radius: 6px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 36px;
+      text-align: center;
+      color: #ffffff;
+      align-items: center;
+    }
+    &__title {
+      margin-left: 0.3em;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 36px;
+      align-items: center;
+
+      /* Blue / 100 */
+
+      color: #0c2146;
+    }
+  }
+}
+
+.c-menu {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background: #ffc970;
+  height: 72px;
+  padding: 10px 0;
+  &__link {
+    font-size: 14px;
+    color: #444444;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 5px 35px;
+    align-items: center;
+    border-radius: 4px;
+    text-decoration: none;
+    fill: #444444;
+    font-family: Inter;
+
+    &--active {
+      background: rgba(235, 242, 255, 0.3);
+      color: #00579f;
+    }
+    &--active path {
+      fill: #00579f;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<div class="C-headCard">
+  <h2 class="__title">Listado de productos({{productList.length}})</h2>
+  <div>
+
+    <div [ngClass]="{'C-headCard__buttonActive': !view, 'C-headCard__buttonInactive': view}" (click)="view = false">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 0V4H17V0H5ZM5 14H17V10H5V14ZM5 9H17V5H5V9ZM0 4H4V0H0V4ZM0 14H4V10H0V14ZM0 9H4V5H0V9Z" fill="#787885"/>
+      </svg>
+    </div>
+
+
+    <div [ngClass]="{'C-headCard__buttonActive': view, 'C-headCard__buttonInactive': !view}" (click)="view = true">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 8H8V0H0V8ZM0 18H8V10H0V18ZM10 18H18V10H10V18ZM10 0V8H18V0" fill="#444444"/>
+        </svg>
+      </div>
+
+  </div>
+</div>
+<div [ngClass]="{'row': view, 'list-group': !view}">
+    <div *ngFor="let product of productList" [ngClass]="{'col-12 col-md-3': view, 'list-group-item': !view}">
+      <app-product [isPrev]="false" [product]="product" (deleteClickEmitter)="deleteProduct($event)"></app-product>
+    </div>
+</div>

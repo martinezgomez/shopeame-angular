@@ -1,0 +1,57 @@
+.c-product {
+  font-family: inter;
+  margin: 2em;
+
+  &__img {
+    height: 224px;
+    max-width: 100%;
+  }
+  &__name {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.0275em;
+    color: #19191d;
+  }
+  &__price {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  &__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.018em;
+    color: #787885;
+  }
+  &__button {
+    margin-right: 2em;
+    float: right;
+    clear: right;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #2264d1;
+    background: #ffffff;
+    border: 1px solid #9dc2ff;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  &__stars {
+    margin-left: 0.5em;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+    color: #5e6366;
+  }
+}
+
+ngb-rating {
+  font-size: 16px;
+  color: #fb8200;
+  background: white(23, 221, 16, 0.815);
+}

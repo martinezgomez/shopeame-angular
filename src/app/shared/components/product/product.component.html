@@ -1,0 +1,14 @@
+<div class="c-product">
+    
+    <img class="c-product__img" src="{{product.image}}" alt="">
+    <h3 class="c-product__name" >{{product.name}}</h3>
+    <h2 class="c-product__price" >{{product.price}} $</h2>
+    <p class="c-product__description" >{{product.description}}</p>
+    <div>    
+      <ngb-rating [max]="5" rate="{{product.stars}}" [readonly]="true">{{product.stars}}</ngb-rating>
+
+      <span class="c-product__stars">{{product.stars}}</span>
+      <button *ngIf="isPrev" class="c-product__button" (click)="borrarProduct(id)" routerLink="/gestion">Borrar</button>
+      <button *ngIf="!isPrev" class="c-product__button" (click)="editarProduct(product)" routerLink="/gestion">Editar</button>
+    </div>
+  </div>

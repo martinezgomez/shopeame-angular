@@ -1,0 +1,31 @@
+<div class="row">
+    <form class="col-5" [formGroup]="formGroupManagementPage" (submit)="addProduct()">
+      <div class="form-group">
+        <label for="name">Nombre del producto:</label><br>
+        <input type="text" id="name" formControlName="name" placeholder="Por ej: Tiesto para planta">
+      </div>
+      <div class="form-group">
+        <label for="price">Precio:</label><br>
+        <input type="number" id="price" formControlName="price" placeholder="Por ej: 9.50">
+      </div>
+      <div class="form-group">
+        <label for="description">Descripción:</label><br>
+        <input type="text" id="description" formControlName="description" placeholder="Por ej: Lo más vendido este mes">
+      </div>
+      <div class="form-group">
+        <label for="image">Ruta de la imagen:</label><br>
+        <input type="text" id="image" formControlName="image" placeholder="Por ej: http://blabla.com/img.jpg">
+      </div>
+      <div class="form-group">
+        <label for="stars">Opiniones:</label><br>
+        <input type="number" id="stars" formControlName="stars" placeholder="Por ej: 4.28">
+      </div>
+  
+  
+      <input class="buttonSave" type="submit" value="Save" routerLink="/prods"/>
+  
+    </form>
+    <div class="col-0 divisor"></div>
+    <app-product class="col-5" [product]="formGroupManagementPage.value" [isPrev]="isPrev"></app-product>
+  </div>
+  

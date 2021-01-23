@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./styles/imports/settings.imports";
+@import "./styles/imports/generic.imports";
+@import "./styles/imports/blocks.imports";
+
+body {
+  background-color: #cccccc !important;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
